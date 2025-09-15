@@ -51,12 +51,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 mesh = SubResource("BoxMesh_u5w1b")
 
 [node name="Player" parent="." instance=ExtResource("1_u5w1b")]
-transform = Transform3D(0.0179942, 0.00302766, -0.999834, 0.103963, 0.994569, 0.00488275, 0.994418, -0.104033, 0.0175817, -0.178444, 7.39407, 4.40199)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.178444, 7.39407, 4.40199)
 
 [node name="CameraPivot" type="Marker3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.672199, 0.740371, 0, -0.740371, 0.672199, 0.0495889, 12.2463, 22.4365)
+transform = Transform3D(1, 0, 0, 0, 0.672199, 0.740371, 0, -0.740371, 0.672199, 0.0495889, 10.2463, 32.4365)
 
 [node name="Cylinders" type="Node3D" parent="."]
 
