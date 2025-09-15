@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnny1c7lie7fp"]
+[gd_scene load_steps=6 format=3 uid="uid://cnny1c7lie7fp"]
 
 [ext_resource type="Script" uid="uid://cbixkqm0lpnx7" path="res://art/player.gd" id="1_byatb"]
 [ext_resource type="PackedScene" uid="uid://by8mah4l6tvpt" path="res://art/Cool Lemon.glb" id="1_y40ok"]
+[ext_resource type="PackedScene" uid="uid://xejebwg8n1in" path="res://art/player.glb" id="2_h0ps5"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_byatb"]
 radius = 1.56581
@@ -18,8 +19,12 @@ script = ExtResource("1_byatb")
 [node name="Pivot" type="Node3D" parent="."]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2.362, -1.608, 0.972)
 
+[node name="player" parent="Pivot" instance=ExtResource("2_h0ps5")]
+transform = Transform3D(0.666667, 0, 0, 0, 0.666667, 0, 0, 0, 0.666667, -1.57467, 1.072, -0.648)
+
 [node name="Root Scene" parent="Pivot" instance=ExtResource("1_y40ok")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.338458, 0.686872, -1.64254)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.791, 0.979275, -1.42693)
