@@ -30,7 +30,7 @@ _data = {
 }
 point_count = 4
 
-[node name="main" type="Node"]
+[node name="Main" type="Node"]
 script = ExtResource("1_c0xuc")
 mob_scene = ExtResource("2_08v8r")
 
