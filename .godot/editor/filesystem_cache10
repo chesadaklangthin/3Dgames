@@ -1,8 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757900579
+::res://::1757900941
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1757581105::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment/Environment::-1::1757581105::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1757900941::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::8974336549023568594::1757581081::1757581118::1::::<><><>0<>0<>37d36b8e160ddb4c264fae0e7b5261df<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::7903020310856124364::1757900940::1757900975::1::::<><><>0<>0<>5f05651a86a5026c9c03aac0ecf086a7<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::1935080719250157033::1757900940::1757900975::1::::<><><>0<>0<>0c2397cb1551092713af86d896e2ee8d<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::1969093345059362264::1757900940::1757900975::1::::<><><>0<>0<>78520a38ff59725f1215ca481ca3465f<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 mob.gd::GDScript::5344815469561403309::1757863399::0::1::::<>CharacterBody3D<><>0<>0<><>::
 mob.tscn::PackedScene::1127095035216485354::1757868934::0::1::::<><><>0<>0<><>::uid://cifclhminfafl::::res://mob.gd<>uid://3dvpc1mnibxu::::res://art/mob.glb
 music_player.tscn::PackedScene::6210531786912582697::1757868934::0::1::::<><><>0<>0<><>::uid://cwlurgxyqunur::::res://art/House In a Forest Loop.ogg
