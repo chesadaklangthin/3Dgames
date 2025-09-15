@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnny1c7lie7fp"]
+
+[ext_resource type="Script" uid="uid://cbixkqm0lpnx7" path="res://art/player.gd" id="1_byatb"]
+[ext_resource type="PackedScene" uid="uid://by8mah4l6tvpt" path="res://art/Cool Lemon.glb" id="1_y40ok"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_byatb"]
+radius = 1.56581
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_byatb"]
+height = 2.12541
+radius = 2.19287
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54751, 6.58143, 1.0546)
+collision_mask = 6
+script = ExtResource("1_byatb")
+
+[node name="Pivot" type="Node3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2.362, -1.608, 0.972)
+
+[node name="Root Scene" parent="Pivot" instance=ExtResource("1_y40ok")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.338458, 0.686872, -1.64254)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.791, 0.979275, -1.42693)
+shape = SubResource("SphereShape3D_byatb")
+
+[node name="MobDetector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MobDetector"]
+transform = Transform3D(0.0433229, 0.999061, 0, -0.999061, 0.0433229, 0, 0, 0, 1, 1.84524, 2.1272, -1.83556)
+shape = SubResource("CylinderShape3D_byatb")
+
+[connection signal="body_entered" from="MobDetector" to="." method="_on_mob_detector_body_entered"]
