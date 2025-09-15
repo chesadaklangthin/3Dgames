@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="Squash the Creeps (3D)"
-run/main_scene="uid://bvquaf3432wd8"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 
