@@ -1,27 +1,30 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757864369
+::res://::1757900579
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1757581105::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment/Environment::-1::1757581105::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::8974336549023568594::1757581081::1757581118::1::::<><><>0<>0<>37d36b8e160ddb4c264fae0e7b5261df<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 mob.gd::GDScript::5344815469561403309::1757863399::0::1::::<>CharacterBody3D<><>0<>0<><>::
-mob.tscn::PackedScene::1127095035216485354::1757864369::0::1::::<><><>0<>0<><>::uid://cifclhminfafl::::res://mob.gd<>uid://3dvpc1mnibxu::::res://art/mob.glb
-::res://3Dgame/::1757863164
-::res://art/::1757864369
+mob.tscn::PackedScene::1127095035216485354::1757868934::0::1::::<><><>0<>0<><>::uid://cifclhminfafl::::res://mob.gd<>uid://3dvpc1mnibxu::::res://art/mob.glb
+music_player.tscn::PackedScene::6210531786912582697::1757868934::0::1::::<><><>0<>0<><>::uid://cwlurgxyqunur::::res://art/House In a Forest Loop.ogg
+::res://3D/::1757900407
+::res://3Dgame/::1757900406
+::res://art/::1757869002
 body.material::StandardMaterial3D/StandardMaterial3D::-1::1757581081::0::1::::<><><>0<>0<><>::
 Cool Lemon.glb::PackedScene/PackedScene::4139806413807815181::1757582698::1757582699::1::::<><><>0<>0<>0217d8304e60e278850b9751d9107a53<>res://.godot/imported/Cool Lemon.glb-34d6d434c4828dd16702a60fd863d0cd.scn::uid://cfa24uiux7nkh::::res://art/Cool Lemon_100Avatars_157_AwesomeLemon.png
 Cool Lemon_100Avatars_157_AwesomeLemon.png::CompressedTexture2D/CompressedTexture2D::5125477796170456063::1757582699::1757582700::1::::<><><>0<>0<>b807e36154f718de0c0951476d0fa66d<>res://.godot/imported/Cool Lemon_100Avatars_157_AwesomeLemon.png-c77ce0c32888f3568b74073e0e394e98.s3tc.ctex::
 eye.material::StandardMaterial3D/StandardMaterial3D::-1::1757581081::0::1::::<><><>0<>0<><>::
 House In a Forest Loop.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::6340949132852520397::1757581081::1757581118::1::::<><><>0<>0<>a3e7a595c9ab7e111a26453089f7130f<>res://.godot/imported/House In a Forest Loop.ogg-1a6a72ae843ad792b7039931227e8d50.oggvorbisstr::
-main.gd::GDScript::8294818845261470464::1757864369::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::3894631091239472663::1757864369::0::1::::<><><>0<>0<><>::uid://dqgcppnnx2o2k::::res://art/main.gd<>uid://cnny1c7lie7fp::::res://art/player.tscn
+main.gd::GDScript::8294818845261470464::1757865196::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::3894631091239472663::1757869002::0::1::::<><><>0<>0<><>::uid://dqgcppnnx2o2k::::res://art/main.gd<>uid://cnny1c7lie7fp::::res://art/player.tscn<>uid://qb8dcxl0mydu::::res://mob.tscn<>uid://dv6f21xjrq7m6::::res://fonts/THSarabunNew.ttf<>uid://dj2yo37440p6t::::res://art/score_label.gd
 mob.glb::PackedScene/PackedScene::1972782744658284214::1757581081::1757581119::1::::<><><>0<>0<>573d62520cc04374bcf3adb908cc4227<>res://.godot/imported/mob.glb-3afb43c03b9d1598b6af5154e2543eac.scn::
 mob_body.material::StandardMaterial3D/StandardMaterial3D::-1::1757581081::0::1::::<><><>0<>0<><>::
 mob_eye.material::StandardMaterial3D/StandardMaterial3D::-1::1757581081::0::1::::<><><>0<>0<><>::
-player.gd::GDScript::4860960441891836330::1757864183::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.gd::GDScript::4860960441891836330::1757866806::0::1::::<>CharacterBody3D<><>0<>0<><>::
 player.glb::PackedScene/PackedScene::1623154597627801917::1757581081::1757581119::1::::<><><>0<>0<>112f2266c8a37ad28c59d71efce87cad<>res://.godot/imported/player.glb-08dcfb373480a049995065542e37637b.scn::
-player.tscn::PackedScene::5713637038942438969::1757864369::0::1::::<><><>0<>0<><>::uid://cbixkqm0lpnx7::::res://art/player.gd<>uid://by8mah4l6tvpt::::res://art/Cool Lemon.glb
+player.tscn::PackedScene::5713637038942438969::1757868934::0::1::::<><><>0<>0<><>::uid://cbixkqm0lpnx7::::res://art/player.gd<>uid://by8mah4l6tvpt::::res://art/Cool Lemon.glb
 pupil.material::StandardMaterial3D/StandardMaterial3D::-1::1757581081::0::1::::<><><>0<>0<><>::
-::res://fonts/::1757865131
+score_label.gd::GDScript::7848183573567199653::1757865503::0::1::::<>Label<><>0<>0<><>::
+::res://fonts/::1757865132
 LICENSE.txt::TextFile/TextFile::-1::1757581081::0::1::::<><><>0<>0<><>::
 Montserrat-Medium.ttf::FontFile/FontFile::2802763143869649221::1757581081::1757581118::1::::<><><>0<>0<>33d2f1a97711ccfb2c030a4f15379625<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
-THSarabunNew.ttf::FontFile::8697576680823008935::1757865131::1757865132::1::::<><><>0<>0<>7a13f29aad52129ba946cb891651d7dd<>res://.godot/imported/THSarabunNew.ttf-392cd31ba04e4af707fb84891edb73a0.fontdata::
+THSarabunNew.ttf::FontFile/FontFile::8697576680823008935::1757865131::1757865132::1::::<><><>0<>0<>7a13f29aad52129ba946cb891651d7dd<>res://.godot/imported/THSarabunNew.ttf-392cd31ba04e4af707fb84891edb73a0.fontdata::
