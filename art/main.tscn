@@ -1,20 +1,29 @@
-[gd_scene load_steps=12 format=3 uid="uid://bvquaf3432wd8"]
+[gd_scene load_steps=18 format=3 uid="uid://bvquaf3432wd8"]
 
 [ext_resource type="Script" uid="uid://dqgcppnnx2o2k" path="res://art/main.gd" id="1_c0xuc"]
 [ext_resource type="PackedScene" uid="uid://cnny1c7lie7fp" path="res://art/player.tscn" id="1_u5w1b"]
 [ext_resource type="PackedScene" uid="uid://qb8dcxl0mydu" path="res://mob.tscn" id="2_08v8r"]
+[ext_resource type="PackedScene" uid="uid://bhe0j7s5dyoba" path="res://art/Skyscraper.glb" id="3_425uv"]
 [ext_resource type="FontFile" uid="uid://dv6f21xjrq7m6" path="res://fonts/THSarabunNew.ttf" id="3_ahbd8"]
 [ext_resource type="Script" uid="uid://dj2yo37440p6t" path="res://art/score_label.gd" id="4_05qjn"]
+[ext_resource type="PackedScene" uid="uid://bfywp051gpfk1" path="res://art/Large Building.glb" id="4_f3n73"]
+[ext_resource type="PackedScene" uid="uid://fkkgcshaooy1" path="res://art/CAR Model.glb" id="5_s5qua"]
+[ext_resource type="PackedScene" uid="uid://u4lcf1cvyjo4" path="res://art/Police Car.glb" id="6_6cmca"]
+[ext_resource type="PackedScene" uid="uid://b6uqfneqgk3km" path="res://art/Tree Large.glb" id="7_6cmca"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1tdl4"]
 size = Vector3(60, 2, 62)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_08v8r"]
-albedo_color = Color(0.34902, 0.921569, 0.866667, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_425uv"]
+albedo_color = Color(0.23967, 0.610813, 0.18486, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_u5w1b"]
-material = SubResource("StandardMaterial3D_08v8r")
+material = SubResource("StandardMaterial3D_425uv")
 size = Vector3(60, 2, 60)
+
+[sub_resource type="Environment" id="Environment_08v8r"]
+background_mode = 1
+background_color = Color(0, 0.47451, 0.568627, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u5w1b"]
 albedo_color = Color(0.976042, 0.416384, 0.566407, 1)
@@ -50,13 +59,64 @@ shape = SubResource("BoxShape3D_1tdl4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 mesh = SubResource("BoxMesh_u5w1b")
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Ground"]
+environment = SubResource("Environment_08v8r")
+
+[node name="Skyscraper" parent="Ground" instance=ExtResource("3_425uv")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -34, -1, 1)
+
+[node name="Skyscraper2" parent="Ground" instance=ExtResource("3_425uv")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 33, -1, 1)
+
+[node name="Skyscraper3" parent="Ground" instance=ExtResource("3_425uv")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 33, -1, -33)
+
+[node name="Skyscraper4" parent="Ground" instance=ExtResource("3_425uv")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -33, -1, -33)
+
+[node name="Large Building" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 1, 1, -32)
+
+[node name="Large Building2" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 17, 1, -32)
+
+[node name="Large Building3" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -16, 1, -32)
+
+[node name="Large Building4" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -35, 1, -10)
+
+[node name="Large Building6" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -35, 1, 14)
+
+[node name="Large Building5" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 35, 1, -10)
+
+[node name="Large Building7" parent="Ground" instance=ExtResource("4_f3n73")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 35, 1, 14)
+
+[node name="CAR Model" parent="Ground" instance=ExtResource("5_s5qua")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 24, 1, 0)
+
+[node name="Police Car" parent="Ground" instance=ExtResource("6_6cmca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 1, -11)
+
+[node name="Root Scene" parent="Ground" instance=ExtResource("7_6cmca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 1, 3)
+
+[node name="Root Scene2" parent="Ground" instance=ExtResource("7_6cmca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 1, -21)
+
+[node name="Root Scene3" parent="Ground" instance=ExtResource("7_6cmca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 1, -21)
+
 [node name="Player" parent="." instance=ExtResource("1_u5w1b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.178444, 7.39407, 4.40199)
 
 [node name="CameraPivot" type="Marker3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.672199, 0.740371, 0, -0.740371, 0.672199, 0.0495889, 10.2463, 32.4365)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 1.04959, 13.2463, 29.4365)
 
 [node name="Cylinders" type="Node3D" parent="."]
 
